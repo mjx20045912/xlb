@@ -44,7 +44,9 @@ angular
 
       })
       .when('/search-result', {
-        templateUrl: 'views/search_result.html'
+        templateUrl: 'views/search_result.html',
+        controller: 'ResultSearchCtrl',
+        controllerAs: 'search'
       })
       .otherwise({
         redirectTo: '/'
