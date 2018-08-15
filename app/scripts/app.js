@@ -17,7 +17,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ]) 
+  ])
   .config(function ($routeProvider) {
     // $routeProvider.html5Mode({
     //   enabled: true,
@@ -42,6 +42,9 @@ angular
         templateUrl: 'views/list.html',
         controller: 'ListCtrl',
 
+      })
+      .when('/search-result', {
+        templateUrl: 'views/search_result.html'
       })
       .otherwise({
         redirectTo: '/'
