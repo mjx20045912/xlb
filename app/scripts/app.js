@@ -38,6 +38,11 @@ angular
         controller: 'PostCtrl',
         controllerAs: 'post'
       })
+      .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListCtrl',
+
+      })
       .otherwise({
         redirectTo: '/'
       });

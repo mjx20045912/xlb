@@ -17,3 +17,4 @@ Running `grunt test` will run the unit tests with karma.
 * `npm install -g grunt-cli bower yo`
 * `gem install compass`
 * `npm install`
+* `bower install`

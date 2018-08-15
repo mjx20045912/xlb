@@ -8,10 +8,8 @@
  * Controller of the xlbApp
  */
 angular.module('xlbApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($location) {
+    this.goToPost = function(){
+      $location.path("/post");
+    }
   });
