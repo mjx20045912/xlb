@@ -2,7 +2,7 @@
   <div class="col-md-9">
     <div class="input-group">
       <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-      <input type="text" class="form-control" aria-label="Input your search" placeholder="search">
+      <input type="text" class="form-control" ng-model="search.filterString" aria-label="Input your search" placeholder="search">
       <span class="input-group-addon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></span>
     </div>
   </div>
@@ -10,7 +10,7 @@
   <!-- Split button -->
   <div class="col-md-3">
     <div class="btn-group pull-right">
-      <button type="button" class="btn btn-success">Search by Distance</button>
+      <button type="button" class="btn btn-success" ng-click="search.search()">Search by Distance</button>
       <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="caret"></span>
         <span class="sr-only">Toggle Dropdown</span>
