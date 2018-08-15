@@ -41,4 +41,8 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .controller('AppCtrl', function ($scope) {
+    $scope.location = window.location;
+  })
+  ;
