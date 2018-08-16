@@ -66,6 +66,9 @@ angular
       .when('/skill', {
         templateUrl: 'views/skill.html'
       })
+      .when('/my-application', {
+        templateUrl: 'views/application.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
