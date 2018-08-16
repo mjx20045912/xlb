@@ -1,12 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" -->
+  <!-- crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://simpleqode.bitbucket.io/touche/assets/plugins/font-awesome/css/font-awesome.min.css">
+
 
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,113 +23,37 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- CSS Plugins -->
-  <link rel="stylesheet" href="https://simpleqode.bitbucket.io/touche/assets/plugins/font-awesome/css/font-awesome.min.css">
-  <!-- CSS Global -->
-  <link rel="stylesheet" href="https://simpleqode.bitbucket.io/touche/assets/css/theme.min.css">
 
-  <!--<link rel="stylesheet" href="styles/main.css">-->
 </head>
 
-<body data-spy="scroll" data-offset="71" data-target=".navbar:visible" ng-app="xlbApp" ng-controller="AppCtrl">
-<!-- NAVBAR
-  ================================================== -->
-<nav class="navbar navbar-light navbar-expand-lg fixed-top">
-  <div class="container">
-    <!-- Navbar: Brand -->
-    <a class="navbar-brand d-lg-none" href="index.html">Fix it</a>
+<body ng-app="xlbApp" ng-controller="AppCtrl">
 
-    <!-- Navbar: Toggler -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <section class="section">
 
-    <!-- Navbar: Collapse -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <!-- Navbar navigation: Left -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="about-us.html">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu
-          </a>
-          <div class="dropdown-menu" aria-labelledby="nav-item__menu">
-            <a class="dropdown-item" href="menu.html">Menu: Standard</a>
-            <a class="dropdown-item" href="menu_no-images.html">Menu: No Images</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reservation.html">Reservation</a>
-        </li>
-      </ul>
-
-      <!-- Navbar: Brand -->
-      <a class="navbar-brand d-none d-lg-flex" href="index.html">
-        Fix it
-      </a>
-
-      <!-- Navbar navigation: Right -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="news-and-events.html">News & Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact-us.html">Contact</a>
-        </li>
-      </ul>
-
-    </div> <!-- / .navbar-collapse -->
-
-  </div> <!-- / .container -->
-</nav> <!-- / .navbar -->
-
-<!-- WELCOME
-  ================================================== -->
-<section class="section section_welcome" data-parallax="scroll" data-image-src="https://cdn.vox-cdn.com/thumbor/cOjZZLAVrKi4Nc0znYMvwni1PrQ=/0x0:1135x558/1820x1213/filters:focal(339x182:519x362):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56674015/Screen_Shot_2017_09_14_at_11.02.47_AM.0.png">
-
-  <!-- Content -->
-  <div class="section_welcome__main">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <!-- Heading -->
-          <h2 class="section__preheading section_welcome__preheading text-center text-muted">
-          </h2>
-          <h1 class="section__heading section_welcome__heading text-center">
-            Fix it
-          </h1>
-          <p class="section__subheading section_welcome__subheading text-center text-muted">
-            Maintenance platform
-          </p>
-
-          <!-- Button -->
-          <div ng-view=""></div>
+    <!-- Content -->
+    <div class="header ">
+      <div class="container">
+        <div class="text-right pull-right fi-menu">
+          <a href="">mjx@tw.com</a> 
+          <a href="" ng-if="current_role == 'provider'">Dashboard</a>
+          <a href="" ng-if="current_role == 'consumer'">Application</a>
         </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-  </div>
-
-  <!-- Footer -->
-  <div class="section_welcome__footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md">
-          <!-- Address -->
-          <div class="section_welcome__footer__address text-center text-lg-right">
-            <i class="fa fa-map-marker"></i> NCIS & Locke
-          </div>
+        <span class="text-center">
+          Fix it
+        </span>
+      </div>
+    </div>
+    <div class="main container">
+      <div ng-view="" style="height:100%"></div>
+    </div> 
+    <div class="footer container">
+      <p>
+        <div class="section_welcome__footer__address text-center text-lg-right">
+          <i class="fa fa-map-marker fi-color"></i> NCIS & Locke
         </div>
-      </div> <!-- / .row -->
-    </div> <!-- / .container -->
-  </div>
-
+      </p>
+    </div>
+  </section>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
@@ -151,36 +80,15 @@
   <script src="scripts/controllers/provider.js"></script>
 
   <!-- endbuild -->
-</section>
 
-<!-- JS Global -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://simpleqode.bitbucket.io/touche/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- JS Plugins -->
-<script src="https://simpleqode.bitbucket.io/touche/assets/plugins/parallax/parallax.min.js"></script>
+  <!-- JS Global -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://simpleqode.bitbucket.io/touche/assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-messages/angular-messages.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/angular-touch/angular-touch.js"></script>
-<script src="bower_components/lodash/lodash.js"></script>
-<script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
+  <!-- JS Plugins -->
+  <!-- <script src="https://simpleqode.bitbucket.io/touche/assets/plugins/parallax/parallax.min.js"></script> -->
 
-<!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/about.js"></script>
-<script src="scripts/controllers/post.js"></script>
-<script src="scripts/controllers/list.js"></script>
-<script src="scripts/controllers/search_result.js"></script>
 </body>
+
 </html>
