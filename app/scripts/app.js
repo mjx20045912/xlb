@@ -17,13 +17,14 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'angularFileUpload'
+    'angularFileUpload',
+    'ui-notification'
   ])
-  .config(function ($routeProvider) {
-    // $routeProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
+  .config(function ($routeProvider, NotificationProvider) {
+    NotificationProvider.setOptions({
+      delay: 2000
+    });
+
     $routeProvider.when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
@@ -49,8 +50,10 @@ angular
         controller: 'ResultSearchCtrl',
         controllerAs: 'search'
       })
-      .when('/provider',{
-        templateUrl: 'views/provider.html'
+      .when('/provider', {
+        templateUrl: 'views/provider.html',
+        controller: 'ProviderProfileCtrl',
+        controllerAs: 'provider'
       })
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
