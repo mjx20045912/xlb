@@ -51,7 +51,7 @@ angular
       })
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
-      })
+  })
       .otherwise({
         redirectTo: '/'
       });
