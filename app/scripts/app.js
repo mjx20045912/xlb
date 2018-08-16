@@ -59,6 +59,7 @@ angular
   .controller('AppCtrl', function ($scope) {
     $scope.location = window.location;
     $scope.data = {pplist:[{name:"mjx"}]};
+    $scope.current_role = undefined;
   })
   .directive('ngThumb', ['$window', function($window) {
     var helper = {
