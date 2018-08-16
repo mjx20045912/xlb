@@ -58,6 +58,11 @@ angular
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
       })
+      .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        controllerAs: 'profile'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,0 +1,82 @@
+<div>
+
+  <div>
+    <div class="col-xs-8 col-xs-push-2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          My Profile
+          <button class="btn-success pull-right" ng-click="profile.editProfileSwitch()">Edit My Profile</button>
+        </div>
+        <div class="panel-body">
+
+          <div class="row">
+            <div class="col-xs-2">
+              <img src="images/people1.jpeg" width="100%">
+            </div>
+            <div class="col-xs-5">
+              <div>
+                <label class="control-label" for="name_field">Name:</label>
+                <span ng-if="!profile.editingProfile">Yuchen Zhang</span>
+                <input type="text" ng-if="profile.editingProfile" value="Yuchen Zhang"
+                       id="name_field"/>
+              </div>
+              <br/>
+              <div>
+                <label class="control-label" for="gender_field">Gender:</label>
+                <span ng-if="!profile.editingProfile">Male</span>
+                <select ng-if="profile.editingProfile" id="gender_field">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Don't wanna tell</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-xs-5">
+              <div>
+                <label class="control-label" for="location_field">Location:</label>
+                <span ng-if="!profile.editingProfile">Melbourne CBD</span>
+                <input type="text" ng-if="profile.editingProfile" value="Melbourne CBD"
+                       id="location_field"/>
+              </div>
+              <br/>
+              <div>
+                <label class="control-label" for="phone_field">Location:</label>
+                <span ng-if="!profile.editingProfile">+86 13301010101</span>
+                <input type="text" ng-if="profile.editingProfile" value="+86 13301010101"
+                       id="phone_field"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="col-xs-8 col-xs-push-2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          My Skills
+          <button class="btn-success pull-right">Add Skills</button>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6">
+              <label>Cleanup House</label>
+            </div>
+            <div class="col-xs-6">
+              <label>Fix Water Pipe</label>
+            </div>
+            <div class="col-xs-6">
+              <label>Fix Toilet</label>
+            </div>
+            <div class="col-xs-6">
+              <label>Repair Computer</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
