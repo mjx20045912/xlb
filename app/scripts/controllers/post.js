@@ -8,6 +8,8 @@
  * Controller of the xlbApp
  */
 angular.module('xlbApp')
-  .controller('PostCtrl', function () {
-    
-  });
+  .controller('PostCtrl', ['$scope', 'FileUploader', function($scope, FileUploader) {
+    var uploader = $scope.uploader = new FileUploader({
+        url: 'upload.php'
+    });
+  }]);

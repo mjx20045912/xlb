@@ -30,8 +30,22 @@
     <div class="form-group">
       <label for="inputAttachment" class="col-sm-2 control-label">Attachment:</label>
       <div class="col-sm-8">
+        <div class="img-list">
+          <div ng-repeat="item in uploader.queue track by $index">
+            <button type="button" class="remove-btn pull-right" ng-click="item.remove()">
+              <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <div class="thumbnail" ng-show="uploader.isHTML5" ng-thumb="{ file: item._file, height: 100 }"></div>
+
+          </div>
+          <div class="thumbnail" onclick="document.getElementById('file').click();" style="height: 114px;width: 110px;text-align: center;color: #ccc;">
+            <span style="font-size:60px">+</span>
+          </div>
+          <input id="file" type="file" nv-file-select="" uploader="uploader" multiple style="display:none" /><br/>
+
+        </div>
         <!-- <select type="" class="form-control" id="inputFixType"> -->
-        <button type="upload" class="btn btn-default">Upload attachment</button>
+        <!-- <button type="upload" class="btn btn-default">Upload attachment</button> -->
       </div>
     </div>
     <div class="form-group">
