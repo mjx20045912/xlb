@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title></title>
@@ -18,81 +18,113 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="https://simpleqode.bitbucket.io/touche/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="https://simpleqode.bitbucket.io/touche/assets/css/theme.min.css">
+
+  <!--<link rel="stylesheet" href="styles/main.css">-->
 </head>
 
-<body ng-app="xlbApp" ng-controller="AppCtrl">
-  <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-      <!-- <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">xlb</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-            <div style="float:right">
-
-            </div>
-            <ul class="nav navbar-nav">
-              <li ng-class="{active: location.hash.endsWith('#!/')}"><a href="#!">Home</a></li>
-              <li ng-class="{active: location.hash.endsWith('#!/about')}"><a href="#!about">About</a></li>
-              <li ng-class="{active: location.hash.endsWith('#!/post')}"><a href="#!post">Post</a></li>
-              <li ng-class="{active: location.hash.endsWith('#!/contact')}"><a href="#!">Contact</a></li>
-            </ul>
-
-          </div>
-        </div> -->
-      <div class="header">
-        <div class="pull-right " style="margin-top: 45px;">
-          <a href="">wenting@qq.com</a>
-          <a href="" ng-if="current_role == 'provider'">Dashboard</a>
-          <a href="" ng-if="current_role == 'consumer'">Application</a>
-          <a href="">logout</a>
-        </div>
-        <div class="logo"><img src="images/mario-logo.png" alt=""></div>
-        <div class=" fi-title">
-          Fix it
-        </div>
-      </div>
-    </div>
-  </div>
-
+<body data-spy="scroll" data-offset="71" data-target=".navbar:visible" ng-app="xlbApp" ng-controller="AppCtrl">
+<!-- NAVBAR
+  ================================================== -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top">
   <div class="container">
-    <div ng-view=""></div>
-  </div>
+    <!-- Navbar: Brand -->
+    <a class="navbar-brand d-lg-none" href="index.html">Fix it</a>
 
-  <div class="footer">
+    <!-- Navbar: Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar: Collapse -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Navbar navigation: Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="nav-item__menu">
+            <a class="dropdown-item" href="menu.html">Menu: Standard</a>
+            <a class="dropdown-item" href="menu_no-images.html">Menu: No Images</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservation.html">Reservation</a>
+        </li>
+      </ul>
+
+      <!-- Navbar: Brand -->
+      <a class="navbar-brand d-none d-lg-flex" href="index.html">
+        Fix it
+      </a>
+
+      <!-- Navbar navigation: Right -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="news-and-events.html">News & Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li>
+      </ul>
+
+    </div> <!-- / .navbar-collapse -->
+
+  </div> <!-- / .container -->
+</nav> <!-- / .navbar -->
+
+<!-- WELCOME
+  ================================================== -->
+<section class="section section_welcome" data-parallax="scroll" data-image-src="https://cdn.vox-cdn.com/thumbor/cOjZZLAVrKi4Nc0znYMvwni1PrQ=/0x0:1135x558/1820x1213/filters:focal(339x182:519x362):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56674015/Screen_Shot_2017_09_14_at_11.02.47_AM.0.png">
+
+  <!-- Content -->
+  <div class="section_welcome__main">
     <div class="container">
-      <p><span class="glyphicon glyphicon-heart"></span> from ncis and locke team</p>
-    </div>
+      <div class="row align-items-center">
+        <div class="col">
+          <!-- Heading -->
+          <h2 class="section__preheading section_welcome__preheading text-center text-muted">
+          </h2>
+          <h1 class="section__heading section_welcome__heading text-center">
+            Fix it
+          </h1>
+          <p class="section__subheading section_welcome__subheading text-center text-muted">
+            Maintenance platform
+          </p>
+
+          <!-- Button -->
+          <div ng-view=""></div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
   </div>
 
+  <!-- Footer -->
+  <div class="section_welcome__footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md">
+          <!-- Address -->
+          <div class="section_welcome__footer__address text-center text-lg-right">
+            <i class="fa fa-map-marker"></i> NCIS & Locke
+          </div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </div>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-  <!-- <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script> -->
-
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
@@ -119,6 +151,36 @@
   <script src="scripts/controllers/provider.js"></script>
 
   <!-- endbuild -->
-</body>
+</section>
 
+<!-- JS Global -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://simpleqode.bitbucket.io/touche/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Plugins -->
+<script src="https://simpleqode.bitbucket.io/touche/assets/plugins/parallax/parallax.min.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/post.js"></script>
+<script src="scripts/controllers/list.js"></script>
+<script src="scripts/controllers/search_result.js"></script>
+</body>
 </html>
