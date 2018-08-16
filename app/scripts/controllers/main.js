@@ -14,7 +14,7 @@ angular.module('xlbApp')
       $scope.$parent.current_role = 'consumer';
     }
     this.goToDashboard = function(){
-      $location.path("/about");
+      $location.path("/provider-dashboard");
       $scope.$parent.current_role = 'provider';
     }
     $scope.$parent.current_role = undefined;

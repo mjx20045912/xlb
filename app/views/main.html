@@ -1,19 +1,22 @@
-<div class="text-center" style="">
+<div class="text-center" style=" position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);">
   <div>
-  <div style="font-size:75px;font-weight:700;  font-family: Playfair Display,serif">
-    Fix it
-  </div>
-  <p class="text-center">
-    Maintenance platform
-  </p>
+    <div style="font-size:85px;font-weight:700;  font-family: Playfair Display,serif">
+      Fix it
+    </div>
+    <p class="text-center" style="color:#ccc;">
+      Maintenance platform
+    </p>
 
-  <div>
-    <a class="btn  fi-btn" ng-click="main.goToDashboard()">
-      I can
-    </a>
-    <a class="btn  fi-btn" ng-click="main.goToPost()">
-      I want to
-    </a>
+    <div>
+      <a class="btn fi-btn" ng-click="main.goToDashboard()" style="width:100px;">
+        I can
+      </a>
+      <a class="btn fi-btn" ng-click="main.goToPost()" style="width:100px;">
+        I want to
+      </a>
+    </div>
   </div>
-</div>
 </div>

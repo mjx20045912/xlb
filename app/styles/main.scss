@@ -178,6 +178,13 @@ body {
 .list-group-item,.panel{
   background: transparent;
 }
+.panel-primary > .panel-heading{
+  background: rgba(204, 204, 204, 0.4);
+  border-color: #ccc;
+}
+.panel-primary{
+  border-color: #ccc;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1024px) {
   .container {
