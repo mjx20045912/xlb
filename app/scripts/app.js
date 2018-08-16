@@ -55,6 +55,11 @@ angular
         controller: 'ProviderProfileCtrl',
         controllerAs: 'provider'
       })
+      .when('/application', {
+        templateUrl: 'views/application_detail.html',
+        controller: 'ApplicationDetailProfileCtrl',
+        controllerAs: 'applicationDetail'
+      })
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
       })
