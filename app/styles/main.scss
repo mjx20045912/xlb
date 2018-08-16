@@ -175,7 +175,9 @@ body {
     height: 100px;
   }
 }
-
+.list-group-item,.panel{
+  background: transparent;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1024px) {
   .container {
