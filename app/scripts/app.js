@@ -58,6 +58,9 @@ angular
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
       })
+      .when('/skill', {
+        templateUrl: 'views/skill.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
