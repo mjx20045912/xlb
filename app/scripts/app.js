@@ -49,6 +49,9 @@ angular
         controller: 'ResultSearchCtrl',
         controllerAs: 'search'
       })
+      .when('/provider',{
+        templateUrl: 'views/provider.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
