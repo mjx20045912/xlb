@@ -8,7 +8,7 @@
  * Controller of the xlbApp
  */
 angular.module('xlbApp')
-  .controller('ResultSearchCtrl',function () {
+  .controller('ResultSearchCtrl',function ($scope) {
     var list = [
         {
             image:"images/people1.jpeg",
@@ -35,7 +35,10 @@ angular.module('xlbApp')
     this.resultList = list;
 
     this.search = function(){
-        var filter = this.filterString;
+        var filter = this.filterString || "";
+        $scope.data.pplist = $scope.data.pplist.concat(list);
+        console.log($scope.data);
+        
         this.resultList = _.filter(list, function(p) { return p.name.indexOf(filter) >=0; });
     }
 
