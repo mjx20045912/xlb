@@ -26,6 +26,16 @@ angular.module('xlbApp')
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
         },
         {
+            image:"images/yingying.png",
+            name:"Yingying Chen",
+            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+        },
+        {
+            image:"images/wenting.png",
+            name:"Wenting Yan",
+            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+        },
+        {
             image:"images/changhui.jpg",
             name:"Hui Change",
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
