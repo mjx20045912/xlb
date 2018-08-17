@@ -11,23 +11,23 @@ angular.module('xlbApp')
   .controller('ResultSearchCtrl',function ($scope) {
     var list = [
         {
-            image:"images/people1.jpeg",
+            image:"images/yucheng.jpeg",
             name:"Yuchen Zhang",
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
         },
         {
-            image:"images/people2.jpg",
-            name:"jianxun ma",
+            image:"images/jianxun.png",
+            name:"Jianxun Ma",
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
         },
         {
-            image:"images/people1.jpeg",
-            name:"Yuchen Zhang",
+            image:"images/zhuowen.png",
+            name:"Zhuowen Fan",
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
         },
         {
-            image:"images/people2.jpg",
-            name:"jianxun ma",
+            image:"images/changhui.jpg",
+            name:"Hui Change",
             description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
         }
     ] 

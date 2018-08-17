@@ -191,6 +191,10 @@ input[type='text'],input[type='date'],textarea.form-control,select.form-control,
   background: rgba(204, 204, 204, 0.4);
   color: #fff;
 }
+.list-thumbnail > img, .list-thumbnail a > img{
+  height: 250px;
+  width: 250px;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1024px) {
