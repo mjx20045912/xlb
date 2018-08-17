@@ -195,7 +195,9 @@ input[type='text'],input[type='date'],textarea.form-control,select.form-control,
   height: 250px;
   width: 250px;
 }
-
+.full-width{
+  width: 100% !important;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1024px) {
   .container {

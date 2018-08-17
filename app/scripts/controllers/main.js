@@ -12,12 +12,12 @@ angular.module('xlbApp')
     this.goToPost = function(){
       $location.path("/post");
       $scope.$parent.current_role = 'consumer';
-      $scope.$parent.current_user = 'yucheng.Zhange';
+      $scope.$parent.current_user = 'Abby.Yan';
     }
     this.goToDashboard = function(){
       $location.path("/provider-dashboard");
       $scope.$parent.current_role = 'provider';
-      $scope.$parent.current_user = 'jianxun.Ma';
+      $scope.$parent.current_user = 'Yuchen.Zhang';
     }
     $scope.$parent.current_role = undefined;
     $scope.$parent.current_user = '';

@@ -63,6 +63,9 @@ angular
       .when('/provider-dashboard', {
         templateUrl: 'views/provider_dashboard.html'
       })
+      .when('/provider_dashboard', {
+        templateUrl: 'views/provider_dashboard1.html'
+      })
       .when('/skill', {
         templateUrl: 'views/skill.html'
       })

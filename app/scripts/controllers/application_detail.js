@@ -14,6 +14,6 @@ angular.module('xlbApp')
     }
     this.confirm =function(){
       Notification.success("Thank you for help!"); 
-      $location.path("/provider-dashboard");
+      $location.path("/provider_dashboard");
     }
   });

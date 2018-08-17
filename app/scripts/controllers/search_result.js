@@ -13,32 +13,42 @@ angular.module('xlbApp')
         {
             image:"images/yucheng.jpeg",
             name:"Yuchen Zhang",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"House Clean<br/>Fix Water Pipe<br/>Repair Toilet"
         },
         {
             image:"images/jianxun.png",
             name:"Jianxun Ma",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"Paint Wall<br/>Repair Toilet<br/>Sewer Clean"
         },
         {
             image:"images/zhuowen.png",
             name:"Zhuowen Fan",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"Check & Repair Circuit<br/>Mowing the Lawn<br/>Paint the Wall"
         },
         {
             image:"images/yingying.png",
             name:"Yingying Chen",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"Repair Computer<br/>Gardening<br/>Mowing the Lawn"
         },
         {
             image:"images/wenting.png",
             name:"Wenting Yan",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"Change bulb<br/>Repair the Roof<br/>Paint Wall"
         },
         {
             image:"images/changhui.jpg",
             name:"Hui Change",
-            description:"William Shakespeare was an English poet, playwright and actor, widely regarded as both the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\"."
+            description:"Fix Water Faucet<br/>Clean Sewer<br/>House Clean"
+        },
+        {
+            image:"images/haipeng.jpeg",
+            name:"Haipeng Liu",
+            description:"Repair Computer<br/>Check & Repair Circuit<br/>House Clean"
+        },
+        {
+            image:"images/chenyu.jpeg",
+            name:"Yu Chen",
+            description:"Change Bulb<br/>Gardening<br/>Paint Wall"
         }
     ] 
 
@@ -49,7 +59,7 @@ angular.module('xlbApp')
         $scope.data.pplist = $scope.data.pplist.concat(list);
         console.log($scope.data);
         
-        this.resultList = _.filter(list, function(p) { return p.name.indexOf(filter) >=0; });
+        this.resultList = _.filter(list, function(p) { return p.description.indexOf(filter) >=0; });
     }
 
   });
